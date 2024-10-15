@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.main;
-import tn.esprit.gestionzoo.entities.Zoo;
-import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.*;
+
 public class Main {
     public static void main(String[] arg) {
 
@@ -28,6 +28,14 @@ public class Main {
         Animal katous =new Animal("félidale","p",4,true);
         Animal asfour =new Animal("félidale","pp",4,true);
 
+        Terrestre AnimalTerrest=new Terrestre();
+       Dolphin daulphine=new Dolphin();
+        Penguin penguin=new Penguin();
+        Aquatiques AnimalAquatiques=new Aquatiques();
+       System.out.println("aquatic animal created: "+AnimalAquatiques);
+        System.out.println("terrest animal created: "+AnimalTerrest);
+        System.out.println("daulphine created: "+daulphine);
+       System.out.println("penguin created: "+penguin);
         System.out.println(myZoo.addAnimal(lion));
         System.out.println(myZoo.addAnimal(tigre));
         System.out.println(myZoo.addAnimal(fahed));
